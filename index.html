@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>随手俯卧撑(PushUpGo) 隐私政策（简体中文）</title>
+  <style>
+    :root { --bg:#0b1020; --card:#111834; --text:#eaf2ff; --muted:#9bb3ff; --accent:#7dd3fc; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial; background:#0b1020; color:var(--text); }
+    .wrap { max-width:900px; margin:0 auto; padding:32px 20px 60px; }
+    h1 { font-size:28px; margin:0 0 12px; color:#a5b4fc; }
+    .sub { color:var(--muted); margin-bottom:24px; }
+    section { background:var(--card); border-radius:16px; padding:22px; margin:16px 0; border:1px solid rgba(125,211,252,.25); }
+    h2 { font-size:20px; margin:0 0 12px; color:#7dd3fc; }
+    p, li { line-height:1.6; }
+    ul { padding-left:18px; }
+    code { background:#0e152b; padding:2px 6px; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>随手俯卧撑(PushUpGo) 隐私政策</h1>
+    <p class="sub">最后更新：2025-11-17 · 版本 1.0</p>
+
+    <section>
+      <h2>概要</h2>
+      <p>随手俯卧撑(PushUpGo) 是一款本地优先的俯卧撑记录与可视化应用。我们不要求注册登录，也不接入任何第三方统计或广告 SDK。您的数据默认仅保存在设备本地，您可选择启用 iCloud（CloudKit）同步，由苹果在您的 iCloud 账户内进行加密存储与传输。</p>
+    </section>
+
+    <section>
+      <h2>我们收集与存储的内容</h2>
+      <ul>
+        <li><strong>训练记录</strong>：日期、数量、可选备注、记录来源（如 manual/quick）。模型文件：<code>PushUpRecord</code>。</li>
+        <li><strong>订阅状态</strong>：是否为 Pro、最近确认的商品 ID、到期时间（可选）、最近更新时间。模型文件：<code>SubscriptionStatus</code>。</li>
+        <li><strong>组件快照</strong>（用于小组件展示）：近 30 天总数、累计总数、当前连续天数等聚合数据。存储于 App Group 的 <code>UserDefaults</code> 中。</li>
+      </ul>
+      <p>以上数据均由您在应用内产生，用于提供核心功能（统计、趋势、热力图、导出 CSV、组件展示）。</p>
+    </section>
+
+    <section>
+      <h2>数据的使用方式</h2>
+      <ul>
+        <li>在应用内呈现统计、趋势与热力图，帮助您了解训练情况。</li>
+        <li>为小组件生成只包含聚合数字的快照，便于快速查看。</li>
+        <li>根据订阅状态解锁 Pro 功能（如 iCloud 同步、数据导出等）。</li>
+      </ul>
+      <p>我们不向第三方出售或共享您的个人数据；也不用于广告投放或行为画像。</p>
+    </section>
+
+    <section>
+      <h2>存储与同步</h2>
+      <ul>
+        <li><strong>本地存储</strong>：使用 <code>SwiftData</code> 将记录与订阅状态保存在设备本地。</li>
+        <li><strong>iCloud 同步（可选）</strong>：在设置中开启后，数据通过 <code>CloudKit</code> 同步到您的 iCloud 账户。我们不运营自有服务器，也无法访问您的 iCloud 数据。</li>
+        <li><strong>小组件共享</strong>：通过 <code>App Group</code> 在主 App 与 Widget 扩展间共享快照数据。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>内购与支付</h2>
+      <p>应用采用苹果的 <code>StoreKit</code> 处理购买与恢复过程。支付与交易验证由苹果完成，我们仅在本地保存必要的订阅状态字段，以便提供对应功能。</p>
+    </section>
+
+    <section>
+      <h2>导出与删除</h2>
+      <ul>
+        <li>您可在设置中导出 CSV 文件并自行保存或分享。</li>
+        <li>删除记录：您可以在应用中逐条删除；若启用 iCloud，同步删除会反映到所有设备。</li>
+        <li>卸载应用：会移除设备上的本地数据；如启用过 iCloud，同步数据由您在 iCloud 中管理。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>儿童隐私</h2>
+      <p>PushUpPup 面向普通用户，不针对 13 岁以下儿童。我们不会主动收集儿童个人信息。</p>
+    </section>
+
+    <section>
+      <h2>安全</h2>
+      <p>本地数据由 iOS 系统保护；iCloud 同步由苹果提供端到端安全机制。请确保为设备设置密码或生物识别，并妥善管理您的 Apple ID。</p>
+    </section>
+
+    <section>
+      <h2>变更</h2>
+      <p>我们可能适时更新本政策；变更后会在应用或相应页面提示最新版本与日期。</p>
+    </section>
+
+    <section>
+      <h2>联系</h2>
+      <p>若有隐私相关问题，请发送邮件至 <a href="mailto:wangqy19901003@gmail.com">wangqy19901003@gmail.com</a>。</p>
+    </section>
+ 
+  </div>
+</body>
+</html>
