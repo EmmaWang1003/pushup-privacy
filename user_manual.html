@@ -16,11 +16,12 @@
     ul { padding-left:18px; }
     code { background:#0e152b; padding:2px 6px; border-radius:6px; }
   </style>
+  <!-- 手册：中文入口，与 manual-zh.html 内容同步 -->
 </head>
 <body>
   <div class="wrap">
     <h1>随手俯卧撑(PushUpGo) 用户手册</h1>
-    <p class="sub">最后更新：2025-11-17 · 版本 1.0</p>
+    <p class="sub">最后更新：2025-11-20 · 版本 1.0</p>
 
     <section>
       <h2>概述</h2>
@@ -30,9 +31,9 @@
     <section>
       <h2>快速开始</h2>
       <ul>
-        <li><strong>快捷记录</strong>：在首页点击预设按钮（如 10、20、30），快速增加记录。</li>
-        <li><strong>手动输入</strong>：在首页输入框中填写次数，点击“保存”。</li>
-        <li><strong>备注</strong>：在记录详情中可填写备注，帮助记忆训练场景。</li>
+        <li><strong>快捷记录</strong>：首页点击预设按钮（如 10、20、30）快速记一组。</li>
+        <li><strong>自定义快捷</strong>：点击快捷区右上角齿轮，可新增/删除/修改快捷次数（最多 10 个，范围 1–999），支持恢复默认与保存设置。</li>
+        <li><strong>手动输入</strong>：输入次数后点击“保存”，支持选择 <em>日期与时间</em> 进行回填或补记。</li>
       </ul>
     </section>
 
@@ -40,40 +41,49 @@
       <h2>记录页</h2>
       <ul>
         <li><strong>浏览</strong>：按日期查看历史记录与每日总数。</li>
-        <li><strong>编辑</strong>：展开内嵌编辑器可修改次数或删除该条记录。</li>
-        <li><strong>批量删除</strong>：在工具栏选择多条记录后，可批量删除（需确认）。</li>
-        <li><strong>导出</strong>：前往设置 → 导出数据（CSV），生成并分享文件。</li>
+        <li><strong>编辑</strong>：点开记录的内嵌编辑器，修改次数或删除该条记录。</li>
+        <li><strong>批量删除</strong>：进入选择模式后多选删除，操作前会二次确认，避免误删。</li>
+        <li><strong>导出</strong>（Pro）：前往设置 → 导出数据（CSV），生成并分享文件。</li>
       </ul>
     </section>
 
     <section>
-      <h2>趋势分析</h2>
+      <h2>趋势分析（Pro）</h2>
       <ul>
-        <li><strong>周期</strong>：支持查看 周 / 月 / 年 / 所有 时间范围。</li>
-        <li><strong>图表</strong>：展示各周期内的训练总数变化，辅助长期规划。</li>
-        <li><strong>年度热力图</strong>：横屏展示全年训练热度；竖屏提示旋转手机查看。</li>
+        <li><strong>周期</strong>：支持 周 / 月 / 年 / 全部 时间范围。</li>
+        <li><strong>图表</strong>：展示各周期的训练总数变化，辅助长期规划。</li>
+        <li><strong>热力图</strong>：查看半年度热度分布；可浏览更完整的年度分布（未解锁会提示前往会员中心）。</li>
       </ul>
     </section>
 
     <section>
       <h2>月历与每日统计</h2>
       <ul>
-        <li><strong>月份切换</strong>：点击左右箭头或选择月份快速切换。</li>
-        <li><strong>每日总数</strong>：点击任意日期，查看当天俯卧撑次数。</li>
-        <li><strong>今天标记</strong>：当日日期带蓝色边框，便于定位。</li>
+        <li><strong>月份切换</strong>：使用左右箭头或月份选择器快速切换。</li>
+        <li><strong>每日总数</strong>：点选任意日期，查看当天俯卧撑总次数。</li>
+        <li><strong>今天标记</strong>：今日会以蓝色边框高亮，便于定位。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>自动计数（Pro）</h2>
+      <ul>
+        <li><strong>开启方式</strong>：在首页打开自动计数，全屏呈现专注模式。</li>
+        <li><strong>计数逻辑</strong>：通过触控/按压表面与轻微震动反馈辅助记录；支持重置与退出。</li>
+        <li><strong>权限提醒</strong>：未解锁将提示前往会员中心。</li>
       </ul>
     </section>
 
     <section>
       <h2>设置与分享</h2>
       <ul>
-        <li><strong>iCloud 同步</strong>（Pro）：开启后，数据通过 CloudKit 安全同步到你的 iCloud 账户。</li>
-        <li><strong>导出 CSV</strong>（Pro）：在设置中生成 .csv 文件，可分享或保存。</li>
-        <li><strong>评分与分享</strong>：快速邀请好友与前往 App Store 评分。</li>
-        <li><strong>用户手册与隐私</strong>：在设置中查看本手册与隐私政策。</li>
+        <li><strong>iCloud 同步</strong>（Pro）：通过 <code>CloudKit</code> 在你的 iCloud 账户安全同步。</li>
+        <li><strong>导出 CSV</strong>（Pro）：生成 .csv 文件并分享或保存。</li>
+        <li><strong>评分与分享</strong>：邀请好友与前往 App Store 评分。</li>
+        <li><strong>用户手册与隐私</strong>：查看本手册与隐私政策。</li>
       </ul>
     </section>
-
+ 
     <section>
       <h2>小组件</h2>
       <p>支持在主屏幕展示今日次数、累计总数与连续天数（聚合快照通过 App Group 存储）。</p>
@@ -81,7 +91,7 @@
 
     <section>
       <h2>会员与购买</h2>
-      <p>采用苹果 <code>StoreKit</code> 进行购买与恢复。我们仅在本地保存必要的订阅状态用于解锁功能。</p>
+      <p>采用苹果 <code>StoreKit</code> 进行购买与恢复。本地仅保存必要的订阅状态用于解锁功能。</p>
     </section>
 
     <section>
@@ -90,15 +100,7 @@
         <li>数据默认保存在设备（<code>SwiftData</code>）。</li>
         <li>可选择开启 iCloud 同步（<code>CloudKit</code>），我们无法访问你的 iCloud 数据。</li>
         <li>不集成第三方广告与统计，不出售或共享个人数据。</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>常见问题</h2>
-      <ul>
-        <li><strong>语言显示不正确</strong>：请在系统设置中调整首选语言；应用会自动适配。</li>
-        <li><strong>未找到数据</strong>：尝试下拉刷新或重启应用；确认未卸载或清除数据。</li>
-        <li><strong>iCloud 没有同步</strong>：确认已开启 iCloud 与网络正常，稍后再试。</li>
+        <li>敏感操作如清除数据会进行二次确认。</li>
       </ul>
     </section>
 
@@ -106,6 +108,7 @@
       <h2>联系我们</h2>
       <p>支持邮箱：<a href="mailto:wangqy19901003@gmail.com">wangqy19901003@gmail.com</a></p>
     </section>
+ 
   </div>
 </body>
 </html>
